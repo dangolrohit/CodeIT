@@ -1,0 +1,25 @@
+.card img {
+  width: 400px;
+}
+.cardContent {
+  font-weight: 750;
+}
+.courseCard {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardImg {
+  text-align: center;
+  padding: 5px 5px 15px 5px;
+}
+
+.courseCard:hover {
+  transform: scale(1.04);
+  transition: 0.2s ease-in-out;
+}
+
+.Courses h1 {
+  text-align: center;
+}
