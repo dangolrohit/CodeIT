@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 const Contact = () => {
+  document.getElementById("title").innerHTML = "Contact | Rohit IT";
   return (
     <div>
       <Navbar />

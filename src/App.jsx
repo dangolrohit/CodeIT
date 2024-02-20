@@ -10,6 +10,7 @@ import Page404 from "./pages/Page404";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
+  document.getElementById("title").innerHTML = {};
   return (
     <>
       <BrowserRouter>

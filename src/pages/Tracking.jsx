@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 const Tracking = () => {
+  document.getElementById("title").innerHTML = "Tracking | Rohit IT";
   return (
     <div>
       <Navbar />

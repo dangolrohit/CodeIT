@@ -16,7 +16,7 @@ function Courses() {
             photo="https://codeit.com.np/storage/01HNS6PC6V82AFCBMWM20TC5A1.webp"
           />
           <CourseCard
-            courseTitle="flutter Training"
+            courseTitle="Futter Training"
             photo="https://codeit.com.np/storage/01HNMPXQVPZXYT54XPPNMEBJZY.webp"
           />
         </div>

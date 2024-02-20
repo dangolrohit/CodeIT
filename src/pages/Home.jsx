@@ -5,6 +5,7 @@ import AdsOne from "../components/adsOne";
 import Courses from "../components/Courses";
 
 function Home() {
+  document.getElementById("title").innerHTML = "Home | Rohit IT";
   return (
     <div>
       <Navbar />

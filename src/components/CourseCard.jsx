@@ -1,6 +1,6 @@
 import React from "react";
 import "./coursecard.css";
-// import Photo from "../assets/39.webp";
+
 function CourseCard(props) {
   return (
     <>

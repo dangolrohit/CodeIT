@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 function Blog() {
+  document.getElementById("title").innerHTML = "Blog | Rohit IT";
   return (
     <div>
       <Navbar />
