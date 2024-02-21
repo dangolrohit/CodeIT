@@ -1,5 +1,6 @@
 #navBar {
-  background-color: rgb(158, 208, 255);
+  width: 1280px;
+  background-color: #9ed0ff;
   display: flex;
   align-items: center;
   justify-content: space-between;

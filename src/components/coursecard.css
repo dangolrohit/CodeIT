@@ -1,6 +1,3 @@
-.card img {
-  width: 400px;
-}
 .cardContent {
   font-weight: 750;
   display: flex;
@@ -15,6 +12,7 @@
 }
 
 .cardImg {
+  width: 405px;
   text-align: center;
   padding: 5px 5px 15px 5px;
 }

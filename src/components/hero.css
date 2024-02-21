@@ -48,11 +48,14 @@
 .heroInfo {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 3rem;
 }
 
 .heroInfoContent {
+  display: flex;
+  flex-wrap: wrap;
   width: 560px;
   height: 315px;
 }

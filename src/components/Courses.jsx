@@ -8,7 +8,7 @@ function Courses() {
         <h1>Our Popular Courses</h1>;
         <div className="cardsCollection">
           <CourseCard
-            courseTitle="UI/Ux Design"
+            courseTitle="UI/UX Design"
             photo="https://codeit.com.np/storage/01HNN3ND9B6DDXXQ4G9JSA8DY2.webp"
           />
           <CourseCard

@@ -1,0 +1,6 @@
+.placementCardImg img {
+  display: flex;
+  flex-wrap: wrap;
+  width: 285px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 12px;
+}
