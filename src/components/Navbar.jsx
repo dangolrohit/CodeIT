@@ -1,34 +1,38 @@
 import React from "react";
 import "./navbar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Logo from "../assets/rologo.svg";
 
 function Navbar() {
+  const activeClass = ({ isActive }) => (isActive ? "active" : "links");
   return (
     <div>
       <nav id="navBar">
         <div className="logoHeader">
-          <Link to="/" id="brand">
+          <NavLink to="/" id="brand">
             <img src={Logo} alt="Logo" />
-          </Link>
+          </NavLink>
         </div>
         <ul className="navLinks" id="navLinks">
-          <Link to="/" className="links">
+          <NavLink to="/" className={activeClass}>
             Home
-          </Link>
-          <Link to="/about" className="links">
+          </NavLink>
+          <NavLink to="/about" className={activeClass}>
             About
-          </Link>
-          <Link to="/blog" className="links">
+          </NavLink>
+          <NavLink to="/blog" className={activeClass}>
             Blog
-          </Link>
-          <Link to="/service" className="links">
+          </NavLink>
+          <NavLink to="/service" className={activeClass}>
             Service
-          </Link>
-          <Link to="/contact" className="links">
+          </NavLink>
+          <NavLink to="/contact" className={activeClass}>
             Contact
-          </Link>
+          </NavLink>
         </ul>
+        <NavLink to="/login" className={activeClass}>
+          Login
+        </NavLink>
       </nav>
     </div>
   );

@@ -48,7 +48,7 @@ function Footer() {
       </div>
       <hr />
       <p style={{ textAlign: "center" }}>
-        Copyright © {currentYear} | All Rights Reserved{" "}
+        Copyright © {currentYear} | All Rights Reserved
       </p>
     </div>
   );

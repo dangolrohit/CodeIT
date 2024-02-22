@@ -8,6 +8,8 @@ import Order from "./pages/Order";
 import Tracking from "./pages/Tracking";
 import Page404 from "./pages/Page404";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/order" element={<Order />} />
           <Route path="/track" element={<Tracking />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
