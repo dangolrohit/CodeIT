@@ -30,7 +30,7 @@ function Navbar() {
             Contact
           </NavLink>
         </ul>
-        <NavLink to="/login" className={activeClass}>
+        <NavLink to="/login" id="navLogin">
           Login
         </NavLink>
       </nav>

@@ -10,6 +10,7 @@ import Page404 from "./pages/Page404";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/track" element={<Tracking />} />
           <Route path="/login" element={<Login />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/new-register" element={<SignUp />} />
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>

@@ -1,7 +1,9 @@
 import React from "react";
 import "./login.css";
+import { NavLink } from "react-router-dom";
 
-const Loginarea = (toggleSignup) => {
+const Loginarea = () => {
+  let btn = document.getElementById("btn");
   return (
     <div>
       <div className="loginPage">
@@ -13,11 +15,11 @@ const Loginarea = (toggleSignup) => {
             <a href="">forgot password</a>
             <button>Login</button>
             <hr />
+            <p>
+              Don’t have an account?
+              <NavLink to="/new-register"> Sign Up</NavLink>
+            </p>
           </form>
-          <p>
-            Don’t have an account?
-            <button onClick={toggleSignup}>Create an account</button>
-          </p>
         </div>
       </div>
     </div>
