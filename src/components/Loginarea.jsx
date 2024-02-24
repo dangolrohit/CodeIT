@@ -9,7 +9,9 @@ const Loginarea = () => {
     const email = e.target.elements.email.value;
     const passWord = e.target.elements.password.value;
     if (email === "admin" && passWord === "admin") {
-      nav("/dashboard");
+      const token = "12345";
+      localStorage.setItem("_token_", token);
+      nav("/admin/dashboard");
     } else {
       alert("Sorry credential did not match");
     }

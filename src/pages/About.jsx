@@ -1,13 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import AboutHero from "../components/AboutHero";
 
 function About() {
   document.getElementById("title").innerHTML = "About | Rohit IT";
   return (
     <div>
       <Navbar />
-      <h1>You will about Info here</h1>
+      <h1>This is our About page</h1>
     </div>
   );
 }

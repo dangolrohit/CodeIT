@@ -4,6 +4,9 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/rologo.svg";
 
 function Navbar() {
+  const handleLogout = () => {
+    localStorage.removeItem("_token_");
+  };
   const activeClass = ({ isActive }) => (isActive ? "active" : "links");
   return (
     <div>
@@ -29,10 +32,18 @@ function Navbar() {
           <NavLink to="/contact" className={activeClass}>
             Contact
           </NavLink>
+          <NavLink to="/admin/dashboard" className={activeClass}>
+            Dashboard
+          </NavLink>
         </ul>
-        <NavLink to="/login" id="navLogin">
-          Login
-        </NavLink>
+        <div className="loginLogout">
+          <NavLink to="/login" id="navLogin">
+            Login
+          </NavLink>
+          <NavLink id="navLogout" onClick={handleLogout}>
+            Log Out
+          </NavLink>
+        </div>
       </nav>
     </div>
   );

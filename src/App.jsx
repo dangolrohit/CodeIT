@@ -7,10 +7,11 @@ import Service from "./pages/Service";
 import Order from "./pages/Order";
 import Tracking from "./pages/Tracking";
 import Page404 from "./pages/Page404";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
-import Dashboard from "./pages/Dashboard";
+import Dashboard from "./pages/admin/Dashboard";
 import SignUp from "./pages/SignUp";
+import Authwrapper from "./pages/wrapper/Authwrapper";
 
 function App() {
   return (
@@ -25,7 +26,16 @@ function App() {
           <Route path="/order" element={<Order />} />
           <Route path="/track" element={<Tracking />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+
+          <Route
+            element={
+              <Authwrapper>
+                <Outlet />
+              </Authwrapper>
+            }
+          >
+            <Route path="/admin/dashboard" element={<Dashboard />} />
+          </Route>
           <Route path="/new-register" element={<SignUp />} />
           <Route path="*" element={<Page404 />} />
         </Routes>

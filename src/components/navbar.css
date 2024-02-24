@@ -25,6 +25,12 @@
   color: red;
 }
 
-#navLogin {
+#navLogin,
+#navLogout {
   color: #fff;
+}
+
+.loginLogout {
+  display: flex;
+  gap: 20px;
 }
